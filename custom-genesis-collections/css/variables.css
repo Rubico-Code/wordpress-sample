@@ -1,0 +1,197 @@
+/**
+* Global Variables
+* Created By: RubicoTech
+* @Package Custom Genesis Collection
+*/
+:root {
+    /* -- Primary Colors -- */
+    --black: #000;
+    --black-l: #0f0f0f;
+    --black-d: #181818;
+    --white: #fff;
+    --magenta: #FF2EA3;
+    --plum: #7A0949;
+
+    /* -- Secondary Colors -- */
+    --grey-1: #F2F2F2;
+    --grey-2: #D9D9D9;
+    --grey-3: #BFBFBF;
+    --grey-4: #595959;
+    --grey-5: #404040;
+    --grey-6: #262626;
+
+    /* -- Tertiary Colors -- */
+    --purple: #CF55EC;
+    --dark-purple: #390891;
+    --blue: #7A88FF;
+    --dark-blue: #1411DF;
+
+    --modal-bg: #161616;
+
+    /* color with opacity shades */
+    --black-85: rgba(0, 0, 0, 0.85);
+    --black-80: rgba(0, 0, 0, 0.80);
+    --white-75: rgba(255, 255, 255, .75);
+    --white-100: rgba(255, 255, 255, 1);
+
+    /* -- Gradients -- */
+    --gradient-magenta-text: radial-gradient(181.06% 971.01% at 159.47% -62.5%, #DE55F9 23.92%, #C233FD 45.89%, #F143BA 71.17%, #D632BF 97.95%);
+    --bg-magenta-mesh-1: url('../../images/magenta-mesh-1.svg') center center no-repeat;
+    --bg-magenta-mesh-2: url('../../images/magenta-mesh-2.svg') center center no-repeat;
+
+    --bg-bronze-gradient: url('../../images/bronze-gradient.svg') center center no-repeat;
+    --bg-bronze-mesh-1: url('../../images/bronze-mesh-1.svg') center center no-repeat;
+    --bg-bronze-mesh-2: url('../../images/bronze-mesh-2.svg') center center no-repeat;
+
+    --bg-silver-gradient: url('../../images/silver-gradient.svg') center center no-repeat;
+    --bg-silver-mesh-1: url('../../images/silver-mesh-1.svg') center center no-repeat;
+    --bg-silver-mesh-2: url('../../images/silver-mesh-2.svg') center center no-repeat;
+
+    --bg-black-gradient: url('../../images/black-gradient.svg') center center no-repeat;
+    --bg-black-mesh-1: url('../../images/black-mesh-1.svg') center center no-repeat;
+    --bg-black-mesh-2: url('../../images/black-mesh-2.svg') center center no-repeat;
+
+    --card-black-gradient: url('../../images/card-black-gradient.png') center center no-repeat;
+    --card-black-gradient-med: url('../../images/card-black-gradient-med.png') center center no-repeat;
+    --card-black-gradient-sm: url('../../images/card-black-gradient-sm.png') center center no-repeat;
+
+    /* -- Shadows --  */
+    --shadow-5: 5px 5px 15px rgba(0, 15, 60, 0.1);
+    --shadow-small: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    --shadow-medium: 0px 12px 16px rgba(0, 0, 0, 0.04);
+    --shadow-large: 0px 24px 56px rgba(0, 0, 0, 0.04);
+    --shadow-btn: 0px 4px 15px rgba(0, 0, 0, 0.08);
+
+    /* -- Radius -- */
+    --rounded-8: 8px;
+    --rounded-16: 16px;
+    --rounded-32: 32px;
+
+    /* -- Font Families -- */
+    --grotesk_light: 'PxGroteskLight';
+    --grotesk_regular: 'PxGroteskRegular';
+    --grotesk_bold: 'PxGroteskBold';
+
+    /* -- Grid sistem -- */
+    --column: (100% -(2 *var(--page-margin) +11 *var(--gutter))) / 12;
+
+    --columns--xl: 12;
+    --page-margin--xl: 100px;
+    --gutter--xl: 30px;
+
+    --columns--l: 12;
+    --page-margin--l: 30px;
+    --gutter--l: 30px;
+
+    --columns--m: 12;
+    --page-margin--m: 30px;
+    --gutter--m: 30px;
+
+    --columns--s: 12;
+    --page-margin--s: 20px;
+    --gutter--s: 20px;
+
+    --columns--xs: 4;
+    --page-margin--xs: 20px;
+    --gutter--xs: 20px;
+
+    /* Module spacing */
+    --module-spacing--xl: 100px;
+    --module-spacing--l: 100px;
+    --module-spacing--m: 50px;
+    --module-spacing--s: 40px;
+    --module-spacing--xs: 40px;
+
+    /* Text spacing */
+    --text-spacing--xl: 25px;
+    --text-spacing--l: 24px;
+    --text-spacing--m: 20px;
+    --text-spacing--s: 15px;
+    --text-spacing--xs: 10px;
+
+    /* Header spacing */
+    --header-spacing--xl: 50px;
+    --header-spacing--l: 50px;
+    --header-spacing--m: 40px;
+    --header-spacing--s: 35px;
+    --header-spacing--xs: 30px;
+
+    /* -- Card Inner Spacing -- */
+    --card-s-body--l: 40px;
+    --card-s-body--m: 40px;
+    --card-s-body--s: 40px;
+    --card-s-icon-spacing-l: 40px;
+    --card-s-icon-spacing-m: 30px;
+    --card-s-icon-spacing-s: 30px;
+
+
+    /* -- Statement to mobile -- */
+    --page-margin: var(--page-margin--xs);
+    --gutter: var(--gutter--xs);
+    --columns: var(--columns--xs);
+
+    --module-spacing: var(--module-spacing--xs);
+    --text-spacing: var(--text-spacing--xs);
+    --headline-deco-spacing: 12px;
+    --header-spacing: var(--header-spacing--xs);
+
+    --card-s-body: var(--card-s-body--s);
+    --card-icon-spacing: var(--card-s-icon-spacing-s);
+}
+
+/* -- Media Break-Points -- */
+@media only screen and (min-width: 576px) {
+    :root {
+        --page-margin: var(--page-margin--s);
+        --gutter: var(--gutter--s);
+        --columns: var(--columns--s);
+
+        --module-spacing: var(--module-spacing--s);
+        --text-spacing: var(--text-spacing--s);
+        --header-spacing: var(--header-spacing--s);
+
+        --card-s-body: var(--card-s-body--s);
+        --card-s-icon-spacing: var(--card-s-icon-spacing-s);
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        --page-margin: var(--page-margin--m);
+        --gutter: var(--gutter--m);
+        --columns: var(--columns--m);
+        --module-spacing: var(--module-spacing--m);
+        --text-spacing: var(--text-spacing--m);
+        --header-spacing: var(--header-spacing--m);
+
+        --card-s-body: var(--card-s-body--m);
+        --card-s-icon-spacing: var(--card-s-icon-spacing-m);
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --page-margin: var(--page-margin--l);
+        --gutter: var(--gutter--l);
+        --columns: var(--columns--l);
+        --module-spacing: var(--module-spacing--l);
+        --text-spacing: var(--text-spacing--l);
+        --header-spacing: var(--header-spacing--l);
+
+        --card-s-body: var(--card-s-body--l);
+        --card-s-icon-spacing: var(--card-s-icon-spacing-l);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    :root {
+        --page-margin: var(--page-margin--xl);
+        --gutter: var(--gutter--xl);
+        --columns: var(--columns--xl);
+
+        --module-spacing: var(--module-spacing--xl);
+        --text-spacing: var(--text-spacing--xl);
+        --header-spacing: var(--header-spacing--xl);
+    }
+}

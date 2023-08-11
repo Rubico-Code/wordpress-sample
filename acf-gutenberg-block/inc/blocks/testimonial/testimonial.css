@@ -1,0 +1,53 @@
+/**
+* This file responsible for all king of styling for this plugin.
+ */
+.testimonial-block {
+    display: flex;
+}
+
+.testimonial-block blockquote {
+    width: 70%;
+}
+
+.testimonial-block .testimonial-image {
+    width: 30%;
+}
+
+.testimonial-block .testimonial-image img {
+    display: block;
+    width: 100%;
+}
+
+.testimonial-block span {
+    display: block;
+}
+
+.testimonial-block span.testimonial-text {
+    font-size: 22px;
+    line-height: 28px;
+    font-family: cursive;
+    position: relative;
+}
+
+.testimonial-block span.testimonial-text::before {
+    content: "\201D";
+    font-family: Georgia, serif;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    font-size: 45px;
+}
+
+.testimonial-block span.testimonial-author {
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 3rem;
+}
+
+.testimonial-block span.testimonial-role {
+    font-size: 14px;
+}
+
+.testimonial-blockquote {
+    padding: 30px 10px;
+}

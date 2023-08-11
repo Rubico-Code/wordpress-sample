@@ -1,0 +1,15 @@
+/*
+  Theme Name: customblocktheme
+  Author: Newton Varun
+  version: 1.0.0
+
+*/
+@import url("https://use.typekit.net/imp2jke.css");
+.category-sidebar{
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.category-sidebar li{
+  padding-bottom: 10px;
+}

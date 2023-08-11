@@ -1,0 +1,20 @@
+{
+  "name": "acf-gutenberg-block/testimonial",
+  "title": "ACF Testimonial",
+  "description": "This is a testimonial block.",
+  "style": [ "file:./testimonial.css" ],
+  "viewScript": "file:./testimonial.js",
+  "category": "formatting",
+  "icon": "admin-comments",
+  "keywords": ["testimonial", "quote"],
+  "acf": {
+    "mode": "preview",
+    "renderCallback": "my_acf_block_render_callback",
+    "renderTemplate": "testimonial.php",
+    "postTypes": [
+      "page","post"
+    ],
+    "blockVersion": 2
+  },
+  "align": "full"
+}

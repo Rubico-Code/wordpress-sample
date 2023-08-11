@@ -1,0 +1,164 @@
+/**
+* Styling for the "Generic Slider" Block
+* Created By: RubicoTech
+* @Package Custom Genesis Collection
+*/
+.module_generic-slider .generic_slider {
+    background-size: cover;
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.module_generic-slider .generic_slider:before {
+    height: 9px;
+    width: 100%;
+    background: radial-gradient(181.06% 971.01% at 159.47% -62.5%, #DE55F9 23.92%, #C233FD 45.89%, #F143BA 71.17%, #D632BF 97.95%);
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.module_generic-slider .slider_generic {
+    background-color: var(--grey-1);
+}
+
+.module_generic-slider .slider_generic .slick-slide {
+    padding-bottom: 0 !important;
+}
+
+.module_generic-slider .txt-testimonial {
+    padding: var(--header-spacing--s) 20px;
+}
+
+.module_generic-slider .caps {
+    margin-bottom: var(--text-spacing--xl);
+}
+
+.module_generic-slider .slick-list {
+    overflow: hidden;
+    padding: 0;
+}
+
+.module_generic-slider .slider-info {
+    padding: 0;
+}
+
+.module_generic-slider .slick-arrow {
+    position: absolute;
+    padding: 5px;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    text-indent: -99em;
+    transition: all .3s ease;
+    background: #fff url(../../images/arrow-right-black.svg) center center no-repeat !important;
+    bottom: 35px;
+    box-shadow: var(--shadow-btn) !important;
+    border-radius: 50%;
+}
+
+.module_generic-slider .slick-prev {
+    left: 20px;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.module_generic-slider .slick-next {
+    left: 90px;
+    z-index: 1;
+}
+
+.module_generic-slider .txt-testimonial a.btn-icon {
+    margin-top: var(--header-spacing--xs);
+}
+
+.module_generic-slider .btn-icon.icon-animated .btn-txt {
+    color: var(--grey-6) !important;
+}
+
+.module_generic-slider .txt-testimonial > h5 {
+    color: var(--black) !important;
+}
+
+/* -- Media Break-Points -- */
+@media (min-width: 768px) {
+    .module_generic-slider .generic_slider {
+        padding-left: 10px;
+        padding-bottom: 0;
+        grid-column: span 12;
+    }
+
+    .module_generic-slider .generic_slider:before {
+        height: 100%;
+        width: 9px;
+        top: 0;
+    }
+
+    .module_generic-slider .slider-info {
+        display: flex !important;
+    }
+
+    .module_generic-slider .txt-testimonial {
+        padding: 30px 20px;
+        width: 50%;
+        order: 1;
+    }
+
+    .module_generic-slider .img-slider {
+        width: 50%;
+        order: 2;
+    }
+
+    .module_generic-slider .slick-prev {
+        left: 75px;
+    }
+
+    .module_generic-slider .slick-next {
+        left: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .module_generic-slider .generic_slider {
+        margin-top: var(--module-spacing);
+    }
+
+    .module_generic-slider .slick-arrow {
+        bottom: 75px;
+    }
+
+    .module_generic-slider .img-slider {
+        width: 40%;
+    }
+
+    .module_generic-slider .txt-testimonial {
+        padding: 75px 72px;
+        width: 60%;
+    }
+
+    .module_generic-slider .txt-testimonial a.btn-icon {
+        margin-top: var(--header-spacing--l);
+    }
+}
+
+@media (max-width: 1023px) {
+    .module_generic-slider {
+        padding-bottom: calc(var(--module-spacing--xl) - 25px);
+    }
+
+    .module_generic-slider .txt-testimonial > h5 {
+        font-size: 24px !important;
+        line-height: 32px !important;
+        margin-bottom: 0 !important;
+        color: var(--black) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .module_generic-slider .txt-testimonial > h5 {
+        margin-bottom: var(--text-spacing--m) !important;
+    }
+}

@@ -1,0 +1,86 @@
+.toggle-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.button-toggle {
+    position: relative;
+    width: 74px;
+    height: 36px;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.button-toggle.switch,
+.button-toggle.switch .layer {
+    border-radius: 100px;
+}
+
+.checkbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.knobs {
+    z-index: 2;
+}
+
+.layer {
+    width: 100%;
+    background-color: #ebf7fc;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+/* Button 1 */
+#toggle-switch .knobs:before {
+    content: "T";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1;
+    padding: 9px 4px;
+    background-color: #c7c7c7;
+    border-radius: 50%;
+    transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+.solutions-switch .knobs:before{
+	content: "" !important;
+}
+
+.button-toggle-2 .knobs:before {
+	content: "F" !important;
+}
+
+#toggle-switch .checkbox:checked + .knobs:before {
+    content: "T";
+    left: 42px;
+    background-color: #25408F;
+}
+
+.button-toggle-2 .checkbox:checked + .knobs:before{
+	content: "F" !important;
+}
+
+#toggle-switch .checkbox:checked ~ .layer {
+    background-color: #fcebeb;
+}
+
+#toggle-switch .knobs,
+#toggle-switch .knobs:before,
+#toggle-switch .layer {
+    transition: 0.3s ease all;
+}

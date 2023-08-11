@@ -1,0 +1,3 @@
+<?php
+
+return '<!-- wp:genesis-custom-blocks/custom-genesis-generic-slider {"title":"Lorem Ipsum","description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac ante luctus, bibendum purus nec, porttitor ex. Quisque sed tincidunt mauris. Nunc pharetra ipsum nibh, non convallis arcu tempus non. ","rotate-interval":"5000","add-slider":{"rows":[{"":"","heading":"Lorem Ipsum","content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac ante luctus, bibendum purus nec, porttitor ex. Quisque sed tincidunt mauris. Nunc pharetra ipsum nibh, non convallis arcu tempus non. "}]}} /-->';
